@@ -1,0 +1,10 @@
+import random
+number = random.randint(10, 20)
+guess = 1
+while guess != number:
+    input = input("Guess a number between 10 and 20: ")
+    guess = int(input)
+    if guess == number:
+        print("Congratulations")
+    else:
+        print("Try again")
